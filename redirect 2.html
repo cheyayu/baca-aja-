@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sweet Birthday</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        margin: 0;
+        font-family: "Poppins", sans-serif;
+        background: #fdf6f0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+      }
+
+      .card {
+        background: #96c29e; /* hijau soft */
+        border-radius: 20px;
+        padding: 40px;
+        max-width: 800px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+        gap: 20px;
+        position: relative;
+      }
+
+      .text {
+        color: white;
+      }
+
+      .text h1 {
+        font-size: 2.2rem;
+        margin: 0 0 20px 0;
+        color: #ffffff; /* pink pastel */
+        line-height: 1.2;
+      }
+
+      .quote {
+        background: #ffb3ab;
+        color: white;
+        padding: 50px;
+        border-radius: 8px;
+        font-size: 12px;
+        line-height: 1.5;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+      }
+
+      .quote small {
+        display: block;
+        margin-top: 10px;
+        font-size: 10px;
+        font-style: italic;
+      }
+
+      .image {
+        text-align: center;
+      }
+
+      .image img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      }
+
+      /* Tombol redirect */
+      .btn-redirect {
+        display: inline-block;
+        margin-top: 20px;
+        padding: 12px 22px;
+        background: #ffb3ab;
+        color: white;
+        font-weight: bold;
+        text-decoration: none;
+        border-radius: 10px;
+        transition: 0.3s;
+      }
+
+      .btn-redirect:hover {
+        background: #ff8a8a;
+      }
+
+      .btn-container {
+        grid-column: span 2;
+        text-align: center;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <div class="text">
+        <h1>Little sweet note<br />for youUuHOhO</h1>
+        <div class="quote">
+          kak, selamat ulang tahun ya, umur yang baru harusnya pengalaman yang
+          baru juga semangat terus kuliahnya, semangat mencoba hal baru dan
+          merakit masa depanmu thank you for being born, thank you for being
+          good listener, thank you for all your kindness. kayanya kalo ga ketemu
+          lo sekarang gue masih bingung nanya kuliahnya atau hal yang berbau itu
+          ke siapa, meskipun lo nyebelin juga sih -_- sekali lagi selamat ulang
+          tahun ya, orang tantrum
+          <small>- che cantik 2025</small>
+        </div>
+      </div>
+      <div class="image">
+        <!-- ganti src sesuai gambar kue -->
+        <img
+          src="https://i.pinimg.com/736x/b1/3b/a6/b13ba67487fb74fee1a2ea4edac3e6b8.jpg"
+          alt="hbd"
+        />
+      </div>
+
+      <!-- Tombol redirect ke page berikutnya -->
+      <div class="btn-container">
+        <a href="redirect 3.html" class="btn-redirect">Next ➝</a>
+      </div>
+    </div>
+  </body>
+</html>
