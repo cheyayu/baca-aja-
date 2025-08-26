@@ -17,13 +17,14 @@
         justify-content: center;
         align-items: center;
         min-height: 100vh;
+        padding: 20px;
       }
 
       .card {
         background: #96c29e; /* hijau soft */
         border-radius: 20px;
         padding: 40px;
-        max-width: 800px;
+        max-width: 900px;
         display: grid;
         grid-template-columns: 1fr 1fr;
         align-items: center;
@@ -39,24 +40,24 @@
       .text h1 {
         font-size: 2.2rem;
         margin: 0 0 20px 0;
-        color: #ffffff; /* pink pastel */
+        color: #ffffff;
         line-height: 1.2;
       }
 
       .quote {
         background: #ffb3ab;
         color: white;
-        padding: 50px;
+        padding: 20px;
         border-radius: 8px;
-        font-size: 12px;
-        line-height: 1.5;
+        font-size: 14px;
+        line-height: 1.6;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
       }
 
       .quote small {
         display: block;
         margin-top: 10px;
-        font-size: 10px;
+        font-size: 12px;
         font-style: italic;
       }
 
@@ -93,6 +94,27 @@
         text-align: center;
         margin-top: 20px;
       }
+
+      /* 📱 Responsif untuk HP */
+      @media (max-width: 768px) {
+        .card {
+          grid-template-columns: 1fr; /* jadi 1 kolom */
+          text-align: center;
+        }
+
+        .text h1 {
+          font-size: 1.8rem;
+        }
+
+        .quote {
+          font-size: 13px;
+          padding: 16px;
+        }
+
+        .btn-container {
+          grid-column: span 1;
+        }
+      }
     </style>
   </head>
   <body>
@@ -111,17 +133,10 @@
         </div>
       </div>
       <div class="image">
-        <!-- ganti src sesuai gambar kue -->
         <img
           src="https://i.pinimg.com/736x/b1/3b/a6/b13ba67487fb74fee1a2ea4edac3e6b8.jpg"
           alt="hbd"
         />
       </div>
 
-      <!-- Tombol redirect ke page berikutnya -->
-      <div class="btn-container">
-        <a href="redirect 3.html" class="btn-redirect">Next ➝</a>
-      </div>
-    </div>
-  </body>
-</html>
+      <!-- Tombol redirect ke page beri
