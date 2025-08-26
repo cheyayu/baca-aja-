@@ -17,21 +17,22 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        background: #fdf6f0; /* ganti warna sesuai selera */
+        background: #fdf6f0;
         font-family: "Poppins", sans-serif;
+        padding: 0 20px; /* biar teks nggak nempel di pinggir HP */
+        text-align: center;
       }
 
       h1 {
         color: #96c29e;
         font-weight: 700;
         margin: 0 0 10px 0;
-        font-family: "Poppins", sans-serif;
+        font-size: 2rem; /* fleksibel, bukan px */
       }
 
       p {
-        font-size: 16px;
+        font-size: 1rem;
         margin: 0 0 20px 0;
-        font-family: "Poppins", sans-serif;
         font-weight: 400;
       }
 
@@ -44,10 +45,9 @@
         border: none;
         padding: 12px 30px;
         border-radius: 30px;
-        font-size: 16px;
+        font-size: 1rem;
         color: white;
         cursor: pointer;
-        font-family: "Poppins", sans-serif;
         font-weight: 500;
         transition: all 0.3s ease;
       }
@@ -55,14 +55,29 @@
       button:hover {
         background-color: #ff9a93;
       }
+
+      /* Responsif untuk HP (layar kecil) */
+      @media (max-width: 480px) {
+        h1 {
+          font-size: 1.5rem;
+        }
+
+        p {
+          font-size: 0.9rem;
+        }
+
+        button {
+          padding: 10px 20px;
+          font-size: 0.9rem;
+        }
+      }
     </style>
   </head>
   <body>
     <h1>Happy Birthday, kak Naaya!</h1>
-    <p>i have something to you</p>
+    <p>I have something for you</p>
     <a href="redirect 1.html">
-      <button>tap me</button>
+      <button>Tap me</button>
     </a>
   </body>
 </html>
-
