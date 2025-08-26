@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coquette Frame</title>
+    <style>
+      body {
+        background: #fdf0f0;
+        font-family: "Poppins", sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+      }
+
+      .frame {
+        background: #96c29e;
+        padding: 30px;
+        border-radius: 15px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+        text-align: center;
+        position: relative;
+        width: 300px;
+      }
+
+      /* background bintang */
+      .frame::before {
+        content: "★";
+        position: absolute;
+        font-size: 40px;
+        color: #ffffff;
+        left: 20px;
+        top: 20px;
+      }
+      .frame::after {
+        content: "★";
+        position: absolute;
+        font-size: 40px;
+        color: #ffffff;
+        right: 20px;
+        bottom: 20px;
+      }
+
+      .photo {
+        border: 8px solid #ffb3ab;
+        border-radius: 20px;
+        overflow: hidden;
+        width: 200px;
+        height: 200px;
+        margin: auto;
+      }
+
+      .photo img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .caption {
+        margin-top: 15px;
+        font-size: 14px;
+        color: #4d2c3d;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="frame">
+      <div class="photo">
+        <img
+          src="https://i.pinimg.com/1200x/6f/7a/88/6f7a88229ac645445b22a7a2c7c90a9a.jpg"
+        />
+      </div>
+      <div class="caption">✦ official made by che ✦</div>
+    </div>
+  </body>
+</html>
