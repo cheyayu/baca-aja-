@@ -11,12 +11,12 @@
     <style>
       body {
         margin: 0;
-        background: #fdf6f0; /* warna background */
+        background: #fdf6f0;
         font-family: "Poppins", sans-serif;
         display: flex;
         flex-direction: column;
         align-items: center;
-        min-height: 130vh; /* tinggi cukup untuk scroll dikit */
+        min-height: 130vh;
         padding: 40px 20px;
       }
 
@@ -30,16 +30,17 @@
       .big-text {
         font-size: 8vw;
         font-weight: 700;
-        color: #96c29e; /* hijau soft */
+        color: #96c29e;
         line-height: 1.1;
         opacity: 0.2;
         word-break: break-word;
+        text-align: center;
       }
 
       /* Teks kecil dengan kotak */
       .quote {
         position: absolute;
-        background: #ffb3ab; /* pink pastel */
+        background: #ffb3ab;
         color: white;
         padding: 10px 15px;
         border-radius: 8px;
@@ -48,35 +49,14 @@
         box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
       }
 
-      /* Posisi tiap quote */
-      .q1 {
-        top: 7%;
-        left: 20%;
-      }
-      .q2 {
-        top: 20%;
-        right: 15%;
-      }
-      .q3 {
-        top: 35%;
-        left: 10%;
-      }
-      .q4 {
-        top: 44%;
-        right: 10%;
-      }
-      .q5 {
-        top: 55%;
-        left: 25%;
-      }
-      .q6 {
-        bottom: 25%;
-        right: 10%;
-      }
-      .q7 {
-        bottom: 10%;
-        left: 20%;
-      }
+      /* Posisi tiap quote (desktop) */
+      .q1 { top: 7%; left: 20%; }
+      .q2 { top: 20%; right: 15%; }
+      .q3 { top: 35%; left: 10%; }
+      .q4 { top: 44%; right: 10%; }
+      .q5 { top: 55%; left: 25%; }
+      .q6 { bottom: 25%; right: 10%; }
+      .q7 { bottom: 10%; left: 20%; }
 
       /* Scroll hint */
       .scroll-hint {
@@ -85,16 +65,12 @@
         color: #96c29e;
         font-weight: 500;
         animation: bounce 1.5s infinite;
+        text-align: center;
       }
 
       @keyframes bounce {
-        0%,
-        100% {
-          transform: translateY(0);
-        }
-        50% {
-          transform: translateY(5px);
-        }
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(5px); }
       }
 
       /* Tombol redirect */
@@ -111,15 +87,37 @@
         font-size: 16px;
         color: white;
         cursor: pointer;
-        font-family: "Poppins", sans-serif;
         font-weight: 500;
         transition: all 0.3s ease;
-        text-decoration: none; /* biar gak underline */
+        text-decoration: none;
         display: inline-block;
       }
 
       .btn:hover {
         background-color: #ff9a93;
+      }
+
+      /* 📱 Responsif untuk HP */
+      @media (max-width: 600px) {
+        .big-text {
+          font-size: 12vw;
+          text-align: center;
+        }
+
+        .quote {
+          position: static; /* biar otomatis ngurut */
+          display: block;
+          margin: 12px auto;
+          font-size: 13px;
+          max-width: 90%;
+          text-align: center;
+        }
+
+        .container {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
       }
     </style>
   </head>
@@ -130,16 +128,12 @@
       </div>
 
       <!-- Quotes -->
-      <div class="quote q1">
-        happy 19th birthday orang nyebelin sejagat raya
-      </div>
+      <div class="quote q1">happy 19th birthday orang nyebelin sejagat raya</div>
       <div class="quote q2">semoga ga sering ngambekan lagi</div>
       <div class="quote q3">semoga ga sering galau lagi</div>
       <div class="quote q4">semoga lebih bahagia lagi</div>
       <div class="quote q5">semoga jadi lebih sabar</div>
-      <div class="quote q6">
-        semoga masih mau ngeladenin bocil tantrum kaya gue
-      </div>
+      <div class="quote q6">semoga masih mau ngeladenin bocil tantrum kaya gue</div>
       <div class="quote q7">doa yang terbaik buat lo, kakak unhas :p</div>
     </div>
 
